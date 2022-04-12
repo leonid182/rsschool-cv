@@ -1,5 +1,59 @@
-body {
-  background-color: red;
+.wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.header {
+  height: 908px;
+  background-image: url(../../Assets/Images/menu/start-screen-gradient-background.png), url(../../Assets/Images/menu/start-screen-background.jpg);
+  padding: 0 40px 0;
+}
+.header .menu {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .menu .logo {
+  width: 184px;
+}
+.header .menu .logo .title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 6%;
+  color: #F1CDB3;
+}
+.header .menu .logo .subtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+.header .menu .nav {
+  width: 423px;
+  padding-top: 17px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header .menu .nav a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #CDCDCD;
+}
+.header .menu .nav a:hover {
+  text-decoration: underline;
+  color: #F1CDB3;
 }
 
 /*# sourceMappingURL=style.css.map */
