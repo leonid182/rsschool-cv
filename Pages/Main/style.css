@@ -3,21 +3,20 @@
   margin: 0 auto;
   max-width: 1280px;
 }
-
-.header {
+.wrapper .header {
   height: 908px;
   background-image: url(../../Assets/Images/menu/start-screen-gradient-background.png), url(../../Assets/Images/menu/start-screen-background.jpg);
   padding: 0 40px 0;
 }
-.header .menu {
+.wrapper .header .menu {
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
 }
-.header .menu .logo {
+.wrapper .header .menu .logo {
   width: 184px;
 }
-.header .menu .logo .title {
+.wrapper .header .menu .logo .title {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 35px;
@@ -25,7 +24,7 @@
   letter-spacing: 6%;
   color: #F1CDB3;
 }
-.header .menu .logo .subtitle {
+.wrapper .header .menu .logo .subtitle {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -33,7 +32,7 @@
   color: #ffffff;
   text-align: center;
 }
-.header .menu .nav {
+.wrapper .header .menu .nav {
   width: 423px;
   padding-top: 17px;
   display: flex;
@@ -41,7 +40,7 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.header .menu .nav a {
+.wrapper .header .menu .nav a {
   display: inline-block;
   padding: 10px;
   text-decoration: none;
@@ -51,9 +50,50 @@
   line-height: 24px;
   color: #CDCDCD;
 }
-.header .menu .nav a:hover {
+.wrapper .header .menu .nav a:hover {
   text-decoration: underline;
   color: #F1CDB3;
+}
+.wrapper .header .makeAfriend {
+  padding: 60px 0 0 0;
+  width: 100%;
+  height: 728px;
+  background-image: url(../../Assets/Images/menu/start-screen-puppy.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.wrapper .header .makeAfriend .makeAfriend_info {
+  width: 462px;
+  height: 322px;
+  margin-top: 163px;
+}
+.wrapper .header .makeAfriend .makeAfriend_info h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 57.2px;
+  color: #ffffff;
+}
+.wrapper .header .makeAfriend .makeAfriend_info p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #CDCDCD;
+  padding-bottom: 42px;
+}
+.wrapper .header .makeAfriend .makeAfriend_info .makeAfriend_button {
+  width: 13rem;
+  height: 3.25rem;
+  background-color: #F1CDB3;
+  border-radius: 100px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
 }
 
 /*# sourceMappingURL=style.css.map */
