@@ -1,11 +1,22 @@
 $padding-for-all: 0 40px 0;
+$color-dark-3xl: #292929;
 $color-dark-xl: #4C4C4C;
 $color-dark-i: #545454;
 $color-dark-s: #CDCDCD;
 $color-dark-m: #B2B2B2;
 $color-light-xl: #ffffff;
+$color-light-s: #FAFAFA;
 $color-primary: #F1CDB3;
 
+
+@mixin Georgia-s() {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22.72px;
+    letter-spacing: 6%;
+
+}
 
 @mixin Georgia-l() {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -37,7 +48,7 @@ $color-primary: #F1CDB3;
 
 }
 
-;
+
 
 .wrapper {
     box-sizing: border-box;
@@ -46,115 +57,297 @@ $color-primary: #F1CDB3;
 
 
 
-.header {
-    height: 908px;
-    background-image: url(../../Assets/Images/menu/start-screen-gradient-background.png), url(../../Assets/Images/menu/start-screen-background.jpg);
-    padding: $padding-for-all;
-    
+    .header {
+        height: 908px;
+        background-image: url(../../Assets/Images/Main/start-screen-gradient-background.png), url(../../Assets/Images/menu/start-screen-background.jpg);
+        padding: $padding-for-all;
 
-    .menu {
-        padding-top: 60px;
+
+        .menu {
+            padding-top: 60px;
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+
+                width: 14.38vw;
+
+                .title {
+                    @include Georgia-xl();
+                    color: $color-primary;
+                }
+
+                .subtitle {
+                    @include Arial();
+                    color: $color-light-xl;
+                    text-align: center;
+
+                }
+            }
+
+            .nav {
+                width: 33.05vw;
+                padding-top: 1.33vw;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+
+                a {
+                    display: inline-block;
+                    padding: 0.78vw;
+                    text-decoration: none;
+                    @include Arial();
+                    color: $color-dark-s;
+
+
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                    color: $color-primary;
+
+                }
+
+            }
+        }
+
+        .makeAfriend {
+            padding: 4.69vw 0 0 0;
+            width: 100%;
+            height: 728px;
+            background-image: url(../../Assets/Images/Main/start-screen-puppy.png);
+            background-repeat: no-repeat;
+            background-position: center right;
+
+
+
+            .makeAfriend_info {
+                width: 36.09vw;
+                height: 322px;
+                margin-top: 163px;
+
+
+                h2 {
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-weight: 400;
+                    font-size: 44px;
+                    line-height: 57.2px;
+                    color: $color-light-xl;
+
+                }
+
+                p {
+                    @include Arial();
+                    color: $color-dark-s;
+                    padding-bottom: 3.28vw;
+                }
+
+                .makeAfriend_button {
+                    width: 16.25vw;
+                    height: 3.25rem;
+                    background-color: $color-primary;
+                    border-radius: 100px;
+                    text-align: center;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 130%;
+                    color: #292929;
+
+
+                }
+
+
+            }
+
+        }
+
+
+    }
+
+
+    .aboutUs {
         display: flex;
         justify-content: space-between;
+        margin-top: 6.25vw;
+        height: 588px;
 
-        .logo {
+        & img {
+            margin-left: 11.72vw;
+            margin-right: 9.77vw;
+        }
 
-            width: 184px;
+        .aboutUs_info {
+            margin-right: 13.28vw;
 
-            .title {
+            & h3 {
                 @include Georgia-xl();
-                color: $color-primary;
+                color: $color-dark-i;
             }
 
-            .subtitle {
+            & p {
                 @include Arial();
-                color: $color-light-xl;
-                text-align: center;
-
+                color: $color-dark-xl;
             }
-        }
-
-        .nav {
-            width: 423px;
-            padding-top: 17px;
-            display:flex;
-            justify-content:space-around;
-            align-items:center;
-            flex-wrap:wrap;
-            
-            a{
-                display:inline-block;
-                padding:10px;
-                text-decoration: none;
-                @include Arial();
-                color: $color-dark-s;
-
-
-            }
-
-            a:hover{
-                text-decoration: underline;
-                color: $color-primary;
-                
-            }
-            
         }
     }
 
-    .makeAfriend{
-        padding: 60px 0 0 0;
-        width: 100%; height: 728px;
-        background-image: url(../../Assets/Images/menu/start-screen-puppy.png);
-        background-repeat: no-repeat;
-        background-position: center right ;
-        
+    .ourFriends {
+        background-color: #E5E5E5;
+        height: 877px;
 
 
-        .makeAfriend_info{
-             width: 462px;
-             height: 322px;
-             margin-top: 163px;
-             
+        & h3 {
+            @include Georgia-xl();
+            color: $color-dark-i;
+            text-align: center;
+            margin-top: 100px;
+            padding-top: 80px;
+        }
 
-             h2{
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                font-weight: 400;
-                font-size: 44px;
-                line-height: 57.2px;
-                color: $color-light-xl;
-                
-             }
-
-             p{
-                @include Arial();
-                color: $color-dark-s;
-                padding-bottom: 2.62rem; 
-             }
-
-             .makeAfriend_button{
-                 width: 13rem;
-                 height: 3.25rem;
-                 background-color: $color-primary;
-                 border-radius: 100px;
-                 text-align: center;
-                 font-family: Georgia, 'Times New Roman', Times, serif;
-                 font-style: normal;
-                 font-weight: 400;
-                 font-size: 17px;
-                 line-height: 130%;
-                 color: #292929;
+        .ourFriends__pets {
+            display: flex;
+            justify-content: space-evenly;
 
 
-             }
+            img {
+                width: 270px;
+                height: 270px;
+
+            }
+
+            .ourFriends__pets__Katrine {
+                background-color: $color-light-s;
+                height: 435px;
+                padding-bottom: 30px;
+
+                h2 {
+                    text-align: center;
+                    color: $color-dark-i;
+                    @include Georgia-s();
+                    margin-top: 30px;
+                }
+
+                button {
+                    margin-left: 35%;
+                    width: 14.61vw;
+                    height: 52px;
+                    border-radius: 100px;
+                    border: 2px solid #F1CDB3;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 17px;
+                    line-height: 22.72px;
+                    letter-spacing: 6%;
+                    text-align: center;
+                    color: $color-dark-3xl;
+                    margin-left: 13%;
+                    margin-top: 30px;
+                }
+            }
+
+            .ourFriends__pets__Jenifer {
+                background-color: $color-light-s;
+                height: 435px;
+                padding-bottom: 30px;
+
+                h2 {
+                    text-align: center;
+                    color: $color-dark-i;
+                    @include Georgia-s();
+                    margin-top: 30px;
+                }
+
+                button {
+                    margin-left: 35%;
+                    width: 14.61vw;
+                    height: 52px;
+                    border-radius: 100px;
+                    border: 2px solid #F1CDB3;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 17px;
+                    line-height: 22.72px;
+                    letter-spacing: 6%;
+                    text-align: center;
+                    color: $color-dark-3xl;
+                    margin-left: 13%;
+                    margin-top: 30px;
+                }
+
+            }
+
+            .ourFriends__pets__Woody {
+                background-color: $color-light-s;
+                height: 435px;
+                padding-bottom: 30px;
 
 
-         }
+
+                h2 {
+                    text-align: center;
+                    color: $color-dark-i;
+                    @include Georgia-s();
+                    margin-top: 30px;
+                }
+
+                button {
+                    margin-left: 35%;
+                    width: 14.61vw;
+                    height: 52px;
+                    border-radius: 100px;
+                    border: 2px solid #F1CDB3;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 17px;
+                    line-height: 22.72px;
+                    letter-spacing: 6%;
+                    text-align: center;
+                    color: $color-dark-3xl;
+                    margin-left: 13%;
+                    margin-top: 30px;
+
+                }
+
+
+            }
+
+
+        }
+
+        .ourFriends__button{
+            display: flex; align-items: center; justify-content: center;
+            width: 20.39vw;
+            height: 52px;
+            background-color: $color-primary;
+            border-radius: 100px;
+            margin: 60px 36.72vw 100px;
+            
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 22.1px;
+            letter-spacing: 6%;
+        }
+
+
 
     }
-    
 
+    .help{
+        height: 611px;
+
+        h3{
+            @include Georgia-xl();
+            color: $color-dark-i;
+            margin-top: 80px;
+            text-align: center;
+            
+        }
+
+        .help__info{
+            width: 80.16vw;
+            height: 281px;
+        }
     }
 
 }
-
-
