@@ -264,5 +264,31 @@
   margin-top: 80px;
   text-align: center;
 }
+.wrapper .help .help__info {
+  width: 80.16vw;
+  height: 281px;
+  display: flex;
+  flex-direction: column;
+  margin: 60px 6.8vw auto;
+}
+.wrapper .help .help__info .help__info__first-line {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .help .help__info .help__info__first-line div {
+  flex-direction: column;
+  height: 113px;
+  text-align: center;
+}
+.wrapper .help .help__info .help__info__second-line {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 55px;
+}
+.wrapper .help .help__info .help__info__second-line div {
+  flex-direction: column;
+  height: 113px;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
