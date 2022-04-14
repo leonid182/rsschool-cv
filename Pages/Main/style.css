@@ -1,3 +1,7 @@
+* a {
+  text-decoration: none;
+}
+
 .wrapper {
   box-sizing: border-box;
   margin: 0 auto;
@@ -67,7 +71,7 @@
   height: 322px;
   margin-top: 163px;
 }
-.wrapper .header .makeAfriend .makeAfriend_info h2 {
+.wrapper .header .makeAfriend .makeAfriend_info h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 44px;
@@ -253,6 +257,7 @@
 }
 .wrapper .help {
   height: 611px;
+  margin-bottom: -20px;
 }
 .wrapper .help h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -289,6 +294,69 @@
   flex-direction: column;
   height: 113px;
   text-align: center;
+}
+.wrapper .donation {
+  background-color: #f6f6f6;
+  height: 462px;
+  display: flex;
+  justify-content: center;
+  padding: 91px 12.73vw 100px;
+}
+.wrapper .donation .donation__img {
+  width: 39.45vw;
+  height: 261px;
+  margin-right: 30px;
+  margin-top: 50px;
+}
+.wrapper .donation .donation__info {
+  width: 39.45vw;
+  height: 261;
+  margin: 20px;
+}
+.wrapper .donation .donation__info h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 6%;
+  color: #545454;
+}
+.wrapper .donation .donation__info .donation__info__banks {
+  color: #545454;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16.5px;
+  letter-spacing: 6%;
+}
+.wrapper .donation .donation__info .donation__info__button {
+  width: 27.27vw;
+  height: 43px;
+  border-radius: 9px;
+  background-color: #F1CDB3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22.72px;
+  letter-spacing: 6%;
+}
+.wrapper .donation .donation__info .donation__info__button a {
+  color: #545454;
+}
+.wrapper .donation .donation__info .donation__info__contant {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B2B2B2;
+}
+.wrapper .footer {
+  height: 350px;
+  background-color: #513D2F;
 }
 
 /*# sourceMappingURL=style.css.map */
