@@ -356,7 +356,22 @@
 }
 .wrapper .footer {
   height: 350px;
-  background-color: #513D2F;
+  background-image: url(../../Assets/Images/Main/footer-background.png);
+  padding: 40px 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper .footer h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 6%;
+  color: #ffffff;
+}
+.wrapper .footer a {
+  text-decoration: none;
+  color: #F1CDB3;
 }
 
 /*# sourceMappingURL=style.css.map */

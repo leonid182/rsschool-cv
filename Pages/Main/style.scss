@@ -453,7 +453,22 @@ $color-primary: #F1CDB3;
 
     .footer{
         height: 350px;
-        background-color: #513D2F;
+        background-image: url(../../Assets/Images/Main/footer-background.png);
+        padding: 40px 40px 0;
+        display: flex; justify-content: space-evenly;
+
+        h3{
+            @include Georgia-xl();
+            color: $color-light-xl;
+        
+        }
+
+
+        a{
+            text-decoration: none;
+            color: $color-primary;
+
+        }
     }
 
 }
