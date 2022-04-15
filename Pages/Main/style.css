@@ -44,6 +44,9 @@
   align-items: center;
   flex-wrap: wrap;
 }
+.wrapper .header .menu .nav .active {
+  color: #F1CDB3;
+}
 .wrapper .header .menu .nav a {
   display: inline-block;
   padding: 0.78vw;
@@ -58,7 +61,7 @@
   text-decoration: underline;
   color: #F1CDB3;
 }
-.wrapper .header .makeAfriend {
+.wrapper .header .makefriend {
   padding: 4.69vw 0 0 0;
   width: 100%;
   height: 728px;
@@ -66,19 +69,19 @@
   background-repeat: no-repeat;
   background-position: center right;
 }
-.wrapper .header .makeAfriend .makeAfriend_info {
+.wrapper .header .makefriend .makefriend_info {
   width: 36.09vw;
   height: 322px;
   margin-top: 163px;
 }
-.wrapper .header .makeAfriend .makeAfriend_info h1 {
+.wrapper .header .makefriend .makefriend_info h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 44px;
   line-height: 57.2px;
   color: #ffffff;
 }
-.wrapper .header .makeAfriend .makeAfriend_info p {
+.wrapper .header .makefriend .makefriend_info p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -86,7 +89,7 @@
   color: #CDCDCD;
   padding-bottom: 3.28vw;
 }
-.wrapper .header .makeAfriend .makeAfriend_info .makeAfriend_button {
+.wrapper .header .makefriend .makefriend_info .makefriend_button {
   width: 16.25vw;
   height: 3.25rem;
   background-color: #F1CDB3;
@@ -97,7 +100,12 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 130%;
+}
+.wrapper .header .makefriend .makefriend_info .makefriend_button a {
   color: #292929;
+}
+.wrapper .header .makefriend .makefriend_info .makefriend_button:hover {
+  background-color: #545454;
 }
 .wrapper .aboutUs {
   display: flex;
@@ -127,11 +135,11 @@
   line-height: 24px;
   color: #4C4C4C;
 }
-.wrapper .ourFriends {
+.wrapper .ourPets {
   background-color: #E5E5E5;
   height: 877px;
 }
-.wrapper .ourFriends h3 {
+.wrapper .ourPets h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 35px;
@@ -142,20 +150,36 @@
   margin-top: 100px;
   padding-top: 80px;
 }
-.wrapper .ourFriends .ourFriends__pets {
+.wrapper .ourPets .ourPets__pets {
   display: flex;
   justify-content: space-evenly;
 }
-.wrapper .ourFriends .ourFriends__pets img {
+.wrapper .ourPets .ourPets__pets .right, .wrapper .ourPets .ourPets__pets .left {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  border: 2px solid #F1CDB3;
+  align-self: center;
+}
+.wrapper .ourPets .ourPets__pets .right:hover, .wrapper .ourPets .ourPets__pets .left:hover {
+  border: 2px solid #292929;
+}
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Katrine img, .wrapper .ourPets .ourPets__pets .ourPets__pets__Jenifer img, .wrapper .ourPets .ourPets__pets .ourPets__pets__Woody img {
   width: 270px;
   height: 270px;
 }
-.wrapper .ourFriends .ourFriends__pets .ourFriends__pets__Katrine {
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Katrine {
   background-color: #FAFAFA;
   height: 435px;
   padding-bottom: 30px;
 }
-.wrapper .ourFriends .ourFriends__pets .ourFriends__pets__Katrine h2 {
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Katrine:hover {
+  transform: scale(1.2);
+}
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Katrine:hover button {
+  background-color: #545454;
+}
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Katrine h2 {
   text-align: center;
   color: #545454;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -165,7 +189,7 @@
   letter-spacing: 6%;
   margin-top: 30px;
 }
-.wrapper .ourFriends .ourFriends__pets .ourFriends__pets__Katrine button {
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Katrine button {
   margin-left: 35%;
   width: 14.61vw;
   height: 52px;
@@ -180,12 +204,21 @@
   margin-left: 13%;
   margin-top: 30px;
 }
-.wrapper .ourFriends .ourFriends__pets .ourFriends__pets__Jenifer {
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Katrine button:hover {
+  border: 2px solid #292929;
+}
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Jenifer {
   background-color: #FAFAFA;
   height: 435px;
   padding-bottom: 30px;
 }
-.wrapper .ourFriends .ourFriends__pets .ourFriends__pets__Jenifer h2 {
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Jenifer:hover {
+  transform: scale(1.2);
+}
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Jenifer:hover button {
+  background-color: #545454;
+}
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Jenifer h2 {
   text-align: center;
   color: #545454;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -195,7 +228,7 @@
   letter-spacing: 6%;
   margin-top: 30px;
 }
-.wrapper .ourFriends .ourFriends__pets .ourFriends__pets__Jenifer button {
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Jenifer button {
   margin-left: 35%;
   width: 14.61vw;
   height: 52px;
@@ -210,12 +243,21 @@
   margin-left: 13%;
   margin-top: 30px;
 }
-.wrapper .ourFriends .ourFriends__pets .ourFriends__pets__Woody {
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Jenifer button:hover {
+  border: 2px solid #292929;
+}
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Woody {
   background-color: #FAFAFA;
   height: 435px;
   padding-bottom: 30px;
 }
-.wrapper .ourFriends .ourFriends__pets .ourFriends__pets__Woody h2 {
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Woody:hover {
+  transform: scale(1.2);
+}
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Woody:hover button {
+  background-color: #545454;
+}
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Woody h2 {
   text-align: center;
   color: #545454;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -225,7 +267,7 @@
   letter-spacing: 6%;
   margin-top: 30px;
 }
-.wrapper .ourFriends .ourFriends__pets .ourFriends__pets__Woody button {
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Woody button {
   margin-left: 35%;
   width: 14.61vw;
   height: 52px;
@@ -236,11 +278,14 @@
   line-height: 22.72px;
   letter-spacing: 6%;
   text-align: center;
-  color: #292929;
   margin-left: 13%;
   margin-top: 30px;
+  color: #292929;
 }
-.wrapper .ourFriends .ourFriends__button {
+.wrapper .ourPets .ourPets__pets .ourPets__pets__Woody button:hover {
+  border: 2px solid #292929;
+}
+.wrapper .ourPets .ourPets__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,6 +299,12 @@
   font-weight: 400;
   line-height: 22.1px;
   letter-spacing: 6%;
+}
+.wrapper .ourPets .ourPets__button a {
+  color: #292929;
+}
+.wrapper .ourPets .ourPets__button:hover {
+  background-color: #ffffff;
 }
 .wrapper .help {
   height: 611px;
@@ -372,6 +423,11 @@
 .wrapper .footer a {
   text-decoration: none;
   color: #F1CDB3;
+}
+.wrapper .footer .email, .wrapper .footer .phone, .wrapper .footer .map {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=style.css.map */

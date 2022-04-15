@@ -94,6 +94,10 @@ $color-primary: #F1CDB3;
                 align-items: center;
                 flex-wrap: wrap;
 
+                .active{
+                    color:$color-primary
+                }
+
                 a {
                     display: inline-block;
                     padding: 0.78vw;
@@ -113,7 +117,7 @@ $color-primary: #F1CDB3;
             }
         }
 
-        .makeAfriend {
+        .makefriend {
             padding: 4.69vw 0 0 0;
             width: 100%;
             height: 728px;
@@ -123,7 +127,7 @@ $color-primary: #F1CDB3;
 
 
 
-            .makeAfriend_info {
+            .makefriend_info {
                 width: 36.09vw;
                 height: 322px;
                 margin-top: 163px;
@@ -144,7 +148,7 @@ $color-primary: #F1CDB3;
                     padding-bottom: 3.28vw;
                 }
 
-                .makeAfriend_button {
+                .makefriend_button {
                     width: 16.25vw;
                     height: 3.25rem;
                     background-color: $color-primary;
@@ -155,9 +159,15 @@ $color-primary: #F1CDB3;
                     font-weight: 400;
                     font-size: 17px;
                     line-height: 130%;
-                    color: #292929;
+                    
+                        a{
+                            color: #292929;
+                        }
 
+                }
 
+                .makefriend_button:hover{
+                    background-color: $color-dark-i;
                 }
 
 
@@ -195,7 +205,7 @@ $color-primary: #F1CDB3;
         }
     }
 
-    .ourFriends {
+    .ourPets {
         background-color: #E5E5E5;
         height: 877px;
 
@@ -208,21 +218,44 @@ $color-primary: #F1CDB3;
             padding-top: 80px;
         }
 
-        .ourFriends__pets {
+        .ourPets__pets {
             display: flex;
             justify-content: space-evenly;
 
+            .right, .left {
+                width: 52px;
+                height: 52px;
+                border-radius: 100%;
+                border: 2px solid $color-primary;
+                align-self: center;
 
-            img {
+
+                &:hover{
+                    border: 2px solid $color-dark-3xl;
+                }
+
+                
+            }
+            .ourPets__pets__Katrine img, .ourPets__pets__Jenifer img, .ourPets__pets__Woody img {
                 width: 270px;
                 height: 270px;
 
             }
 
-            .ourFriends__pets__Katrine {
+           
+
+            .ourPets__pets__Katrine {
                 background-color: $color-light-s;
                 height: 435px;
                 padding-bottom: 30px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                &:hover button{
+                    background-color: $color-dark-i;
+                }
 
                 h2 {
                     text-align: center;
@@ -245,13 +278,25 @@ $color-primary: #F1CDB3;
                     color: $color-dark-3xl;
                     margin-left: 13%;
                     margin-top: 30px;
+
+                    &:hover{
+                        border: 2px solid $color-dark-3xl;
+                    }
                 }
             }
 
-            .ourFriends__pets__Jenifer {
+            .ourPets__pets__Jenifer {
                 background-color: $color-light-s;
                 height: 435px;
                 padding-bottom: 30px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                &:hover button{
+                    background-color: $color-dark-i;
+                }
 
                 h2 {
                     text-align: center;
@@ -274,14 +319,29 @@ $color-primary: #F1CDB3;
                     color: $color-dark-3xl;
                     margin-left: 13%;
                     margin-top: 30px;
+
+                    &:hover{
+                        border: 2px solid $color-dark-3xl;
+                    }
                 }
 
             }
 
-            .ourFriends__pets__Woody {
+            .ourPets__pets__Woody {
                 background-color: $color-light-s;
                 height: 435px;
                 padding-bottom: 30px;
+
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                &:hover button{
+                    background-color: $color-dark-i;
+                }
+
+                
 
 
 
@@ -303,9 +363,17 @@ $color-primary: #F1CDB3;
                     line-height: 22.72px;
                     letter-spacing: 6%;
                     text-align: center;
-                    color: $color-dark-3xl;
                     margin-left: 13%;
                     margin-top: 30px;
+                    color: $color-dark-3xl;
+
+                    &:hover{
+                        border: 2px solid $color-dark-3xl;
+                    }
+
+                    
+
+                    
 
                 }
 
@@ -315,19 +383,30 @@ $color-primary: #F1CDB3;
 
         }
 
-        .ourFriends__button{
+        .ourPets__button{
             display: flex; align-items: center; justify-content: center;
             width: 20.39vw;
             height: 52px;
             background-color: $color-primary;
             border-radius: 100px;
             margin: 60px 36.72vw 100px;
-            
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 17px;
             font-weight: 400;
             line-height: 22.1px;
             letter-spacing: 6%;
+
+
+            a{
+                color: $color-dark-3xl;
+            }
+
+
+            
+        }
+
+        .ourPets__button:hover{
+            background-color: $color-light-xl;
         }
 
 
@@ -468,6 +547,11 @@ $color-primary: #F1CDB3;
             text-decoration: none;
             color: $color-primary;
 
+        }
+
+
+        .email, .phone, .map{
+            display: flex; align-items: center; justify-content: space-evenly;
         }
     }
 
