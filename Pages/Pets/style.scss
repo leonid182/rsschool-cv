@@ -1,0 +1,283 @@
+$padding-for-all: 0 40px 0;
+$color-dark-3xl: #292929;
+$color-dark-xl: #4C4C4C;
+$color-dark-i: #545454;
+$color-light-l: #f6f6f6;
+$color-dark-s: #CDCDCD;
+$color-dark-m: #B2B2B2;
+$color-light-xl: #ffffff;
+$color-light-s: #FAFAFA;
+$color-primary: #F1CDB3;
+
+
+@mixin Georgia-xs() {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22.1px;
+    letter-spacing: 6%;
+
+}
+
+@mixin Georgia-s() {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22.72px;
+    letter-spacing: 6%;
+
+}
+
+@mixin Georgia-l() {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 6%;
+
+}
+
+@mixin Georgia-m() {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35.2px;
+    letter-spacing: 6%;
+
+
+}
+
+@mixin Georgia-xl() {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 6%;
+
+
+}
+
+;
+
+@mixin Arial-xs() {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14.95px;
+    letter-spacing: 10%;
+
+}
+
+@mixin Arial-s() {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+
+}
+
+@mixin info {
+    background-color: $color-light-s;
+    width: 21.09vw;
+    height: 435px;
+    padding-bottom: 30px;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    &:hover button {
+        background-color: $color-dark-i;
+    }
+
+    h2 {
+        text-align: center;
+        color: $color-dark-i;
+        @include Georgia-s();
+        margin-top: 30px;
+    }
+
+    button {
+        margin-left: 35%;
+        width: 14.61vw;
+        height: 52px;
+        border-radius: 100px;
+        border: 2px solid #F1CDB3;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        line-height: 22.72px;
+        letter-spacing: 6%;
+        text-align: center;
+        color: $color-dark-3xl;
+        margin-left: 13%;
+        margin-top: 30px;
+
+        &:hover {
+            border: 2px solid $color-dark-3xl;
+        }
+    }
+}
+
+
+*a {
+    text-decoration: none
+}
+
+;
+
+.wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1280px;
+
+
+
+    .header {
+        height: 120px;
+        background-color: $color-light-xl;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            @include Georgia-m();
+
+            a {
+                color: $color-dark-i;
+            }
+        }
+
+        .nav {
+            @include Arial-s();
+
+            a {
+                color: $color-dark-i
+            }
+
+            ;
+        }
+
+        .subtitle {
+            @include Arial-xs();
+            color: $color-dark-3xl;
+
+        }
+
+        .nav {
+            width: 34.61vw;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+
+    }
+
+    .ourFriends {
+        height: 1342px;
+        background-color: $color-light-l;
+        padding-top: 80px;
+
+
+
+        img {
+            width: 270px;
+            height: 270px;
+        }
+
+        h3 {
+            @include Georgia-xl();
+            color: $color-dark-i;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .ourFriends__pets__first,
+        .ourFriends__pets__second {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .ourFriends__pets__Katrine,
+        .ourFriends__pets__Jennifer,
+        .ourFriends__pets__Woody,
+        .ourFriends__pets__Sophia,
+        .ourFriends__pets__Timmy,
+        .ourFriends__pets__Freddy,
+        .ourFriends__pets__Charly,
+        .ourFriends__pets__Scarlet {
+            @include info();
+            border: 1px solid black;
+
+
+
+
+        }
+
+
+    }
+
+    .wrapper__buttons {
+        display: flex;
+        justify-content: center;
+       
+
+        .buttons {
+            margin-top: 45px;
+            position: absolute;
+            width: 26.56vw;
+            height: 52px;
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                width: 4.06vw;
+                height: 52px;
+                border-radius: 100px;
+                border: 1px solid $color-primary;
+                @include Georgia-l();
+
+            }
+
+            .page {
+                width: 4.06vw;
+                height: 52px;
+                border-radius: 100px;
+                background-color: $color-primary;
+                @include Georgia-l();
+
+            }
+        }
+    }
+
+    .footer{
+        height: 350px;
+        background-image: url(../../Assets/Images/Main/footer-background.png);
+        padding: 40px 40px 0;
+        display: flex; justify-content: space-evenly;
+        
+
+        h3{
+            @include Georgia-xl();
+            color: $color-light-xl;
+        
+        }
+
+
+        a{
+            text-decoration: none;
+            color: $color-primary;
+
+        }
+
+
+        .email, .phone, .map{
+            display: flex; align-items: center; justify-content: space-evenly;
+        }
+    }
+
+}
