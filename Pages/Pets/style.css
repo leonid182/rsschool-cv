@@ -29,9 +29,19 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+  width: 34.61vw;
+  display: flex;
+  justify-content: space-between;
 }
 .wrapper .header .nav a {
   color: #545454;
+}
+.wrapper .header .nav a:hover {
+  text-decoration: underline;
+  color: #F1CDB3;
+}
+.wrapper .header .nav .active {
+  color: #F1CDB3;
 }
 .wrapper .header .subtitle {
   font-family: Arial, Helvetica, sans-serif;
@@ -40,11 +50,6 @@
   line-height: 14.95px;
   letter-spacing: 10%;
   color: #292929;
-}
-.wrapper .header .nav {
-  width: 34.61vw;
-  display: flex;
-  justify-content: space-between;
 }
 .wrapper .ourFriends {
   height: 1342px;
@@ -176,6 +181,9 @@
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 6%;
+}
+.wrapper .wrapper__buttons .buttons button:hover {
+  border: 1px solid #ffffff;
 }
 .wrapper .wrapper__buttons .buttons .page {
   width: 4.06vw;

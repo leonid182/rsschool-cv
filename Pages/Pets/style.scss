@@ -57,7 +57,7 @@ $color-primary: #F1CDB3;
 
 }
 
-;
+
 
 @mixin Arial-xs() {
     font-family: Arial, Helvetica, sans-serif;
@@ -151,12 +151,24 @@ $color-primary: #F1CDB3;
 
         .nav {
             @include Arial-s();
+            width: 34.61vw;
+            display: flex;
+            justify-content: space-between;
 
             a {
                 color: $color-dark-i
+
+                
             }
 
-            ;
+            a:hover{
+                text-decoration: underline;
+                color: $color-primary;
+            }
+
+            .active{
+                color:$color-primary
+            }
         }
 
         .subtitle {
@@ -165,11 +177,7 @@ $color-primary: #F1CDB3;
 
         }
 
-        .nav {
-            width: 34.61vw;
-            display: flex;
-            justify-content: space-between;
-        }
+        
 
 
 
@@ -240,6 +248,10 @@ $color-primary: #F1CDB3;
                 border-radius: 100px;
                 border: 1px solid $color-primary;
                 @include Georgia-l();
+
+                &:hover{
+                    border: 1px solid $color-light-xl;
+                }
 
             }
 
