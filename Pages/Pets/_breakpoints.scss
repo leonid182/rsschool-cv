@@ -1,0 +1,66 @@
+@mixin sm {
+    @media (max-width: map-get($breakpoints, sm)) {
+        @content;
+    }
+
+    
+}
+@mixin lsm {
+    @media (max-width: map-get($breakpoints, lsm)) {
+        @content;
+    }
+
+    
+}
+
+@mixin md {
+    @media (max-width: map-get($breakpoints, md)) {
+        @content;
+    }
+
+    
+}
+@mixin lmd {
+    @media (max-width: map-get($breakpoints, lmd)) {
+        @content;
+    }
+}
+
+
+@mixin lg {
+    @media (max-width: map-get($breakpoints, lg)) {
+        @content;
+    }
+
+    
+}
+@mixin slg {
+    @media (max-width: map-get($breakpoints, slg)) {
+        @content;
+    }
+
+    
+}
+@mixin mlg {
+    @media (max-width: map-get($breakpoints, mlg)) {
+        @content;
+    }
+
+    
+}
+
+@mixin xlg {
+    @media (max-width: map-get($breakpoints, xlg)) {
+        @content;
+    }
+
+    
+}
+
+@mixin xl {
+    @media (max-width: map-get($breakpoints, xl)) {
+        @content;
+    }
+
+    
+}

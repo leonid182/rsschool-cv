@@ -1,0 +1,517 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* a {
+  text-decoration: none;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.wrapper .header {
+  height: 120px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .header h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35.2px;
+  letter-spacing: 6%;
+}
+.wrapper .header h1 a {
+  color: #545454;
+}
+.wrapper .header .nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  width: 34.61vw;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1280px) {
+  .wrapper .header .nav {
+    display: block;
+    margin-left: 5px;
+    width: 50.05vw;
+  }
+}
+.wrapper .header .nav a {
+  color: #545454;
+}
+@media (max-width: 767px) {
+  .wrapper .header .nav a {
+    font-size: 32px;
+    flex-direction: column;
+    line-height: 51.2px;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper .header .nav a {
+    font-size: 32px;
+    flex-direction: column;
+    line-height: 51.2px;
+  }
+}
+.wrapper .header .nav a:hover {
+  text-decoration: underline;
+  color: #F1CDB3;
+}
+.wrapper .header .nav .active {
+  color: #F1CDB3;
+}
+.wrapper .header .subtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14.95px;
+  letter-spacing: 10%;
+  color: #292929;
+}
+.wrapper .header .burger__btn {
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+.wrapper .ourFriends {
+  height: 1342px;
+  height: 100%;
+  background-color: #f6f6f6;
+  padding-top: 80px;
+}
+.wrapper .ourFriends img {
+  width: 270px;
+  height: 270px;
+  width: 100%;
+}
+.wrapper .ourFriends h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 6%;
+  color: #545454;
+  margin-bottom: 60px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .wrapper .ourFriends .ourFriends__pets__first {
+    padding: 30px 64px;
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper .ourFriends .ourFriends__pets__first {
+    padding: 30px 64px;
+    gap: 30px;
+    margin-top: -60px;
+  }
+}
+@media (max-width: 815px) {
+  .wrapper .ourFriends .ourFriends__pets__first {
+    row-gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper .ourFriends .ourFriends__pets__second {
+    padding: 30px 64px;
+    gap: 30px;
+    margin-top: -60px;
+  }
+}
+@media (max-width: 815px) {
+  .wrapper .ourFriends .ourFriends__pets__second {
+    row-gap: 30px;
+  }
+}
+.wrapper .ourFriends .ourFriends__pets__first,
+.wrapper .ourFriends .ourFriends__pets__second {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+@media (max-width: 1060px) {
+  .wrapper .ourFriends .ourFriends__pets__first,
+.wrapper .ourFriends .ourFriends__pets__second {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 701px) {
+  .wrapper .ourFriends .ourFriends__pets__first,
+.wrapper .ourFriends .ourFriends__pets__second {
+    margin-left: 21.4vw;
+  }
+}
+@media (max-width: 590px) {
+  .wrapper .ourFriends .ourFriends__pets__first,
+.wrapper .ourFriends .ourFriends__pets__second {
+    flex-direction: column;
+    margin-left: auto;
+  }
+}
+@media (max-width: 440px) {
+  .wrapper .ourFriends .ourFriends__pets__first,
+.wrapper .ourFriends .ourFriends__pets__second {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+.wrapper .ourFriends .ourFriends__pets__Katrine,
+.wrapper .ourFriends .ourFriends__pets__Jennifer,
+.wrapper .ourFriends .ourFriends__pets__Woody,
+.wrapper .ourFriends .ourFriends__pets__Sophia,
+.wrapper .ourFriends .ourFriends__pets__Timmy,
+.wrapper .ourFriends .ourFriends__pets__Freddy,
+.wrapper .ourFriends .ourFriends__pets__Charly,
+.wrapper .ourFriends .ourFriends__pets__Scarlet {
+  background-color: #FAFAFA;
+  width: 21.09vw;
+  height: 435px;
+  padding-bottom: 30px;
+  border: 1px solid black;
+  min-width: 270px;
+}
+.wrapper .ourFriends .ourFriends__pets__Katrine:hover,
+.wrapper .ourFriends .ourFriends__pets__Jennifer:hover,
+.wrapper .ourFriends .ourFriends__pets__Woody:hover,
+.wrapper .ourFriends .ourFriends__pets__Sophia:hover,
+.wrapper .ourFriends .ourFriends__pets__Timmy:hover,
+.wrapper .ourFriends .ourFriends__pets__Freddy:hover,
+.wrapper .ourFriends .ourFriends__pets__Charly:hover,
+.wrapper .ourFriends .ourFriends__pets__Scarlet:hover {
+  transform: scale(1.2);
+}
+.wrapper .ourFriends .ourFriends__pets__Katrine:hover button,
+.wrapper .ourFriends .ourFriends__pets__Jennifer:hover button,
+.wrapper .ourFriends .ourFriends__pets__Woody:hover button,
+.wrapper .ourFriends .ourFriends__pets__Sophia:hover button,
+.wrapper .ourFriends .ourFriends__pets__Timmy:hover button,
+.wrapper .ourFriends .ourFriends__pets__Freddy:hover button,
+.wrapper .ourFriends .ourFriends__pets__Charly:hover button,
+.wrapper .ourFriends .ourFriends__pets__Scarlet:hover button {
+  background-color: #545454;
+}
+.wrapper .ourFriends .ourFriends__pets__Katrine h2,
+.wrapper .ourFriends .ourFriends__pets__Jennifer h2,
+.wrapper .ourFriends .ourFriends__pets__Woody h2,
+.wrapper .ourFriends .ourFriends__pets__Sophia h2,
+.wrapper .ourFriends .ourFriends__pets__Timmy h2,
+.wrapper .ourFriends .ourFriends__pets__Freddy h2,
+.wrapper .ourFriends .ourFriends__pets__Charly h2,
+.wrapper .ourFriends .ourFriends__pets__Scarlet h2 {
+  text-align: center;
+  color: #545454;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22.72px;
+  letter-spacing: 6%;
+  margin-top: 30px;
+}
+.wrapper .ourFriends .ourFriends__pets__Katrine button,
+.wrapper .ourFriends .ourFriends__pets__Jennifer button,
+.wrapper .ourFriends .ourFriends__pets__Woody button,
+.wrapper .ourFriends .ourFriends__pets__Sophia button,
+.wrapper .ourFriends .ourFriends__pets__Timmy button,
+.wrapper .ourFriends .ourFriends__pets__Freddy button,
+.wrapper .ourFriends .ourFriends__pets__Charly button,
+.wrapper .ourFriends .ourFriends__pets__Scarlet button {
+  width: 14.61vw;
+  height: 52px;
+  border-radius: 100px;
+  border: 2px solid #F1CDB3;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
+  line-height: 22.72px;
+  letter-spacing: 6%;
+  text-align: center;
+  color: #292929;
+  margin-left: 13%;
+  margin-top: 30px;
+  align-items: center;
+}
+@media (max-width: 1060px) {
+  .wrapper .ourFriends .ourFriends__pets__Katrine button,
+.wrapper .ourFriends .ourFriends__pets__Jennifer button,
+.wrapper .ourFriends .ourFriends__pets__Woody button,
+.wrapper .ourFriends .ourFriends__pets__Sophia button,
+.wrapper .ourFriends .ourFriends__pets__Timmy button,
+.wrapper .ourFriends .ourFriends__pets__Freddy button,
+.wrapper .ourFriends .ourFriends__pets__Charly button,
+.wrapper .ourFriends .ourFriends__pets__Scarlet button {
+    margin-left: 7.42vw;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper .ourFriends .ourFriends__pets__Katrine button,
+.wrapper .ourFriends .ourFriends__pets__Jennifer button,
+.wrapper .ourFriends .ourFriends__pets__Woody button,
+.wrapper .ourFriends .ourFriends__pets__Sophia button,
+.wrapper .ourFriends .ourFriends__pets__Timmy button,
+.wrapper .ourFriends .ourFriends__pets__Freddy button,
+.wrapper .ourFriends .ourFriends__pets__Charly button,
+.wrapper .ourFriends .ourFriends__pets__Scarlet button {
+    margin-left: 10.42vw;
+  }
+}
+@media (max-width: 701px) {
+  .wrapper .ourFriends .ourFriends__pets__Katrine button,
+.wrapper .ourFriends .ourFriends__pets__Jennifer button,
+.wrapper .ourFriends .ourFriends__pets__Woody button,
+.wrapper .ourFriends .ourFriends__pets__Sophia button,
+.wrapper .ourFriends .ourFriends__pets__Timmy button,
+.wrapper .ourFriends .ourFriends__pets__Freddy button,
+.wrapper .ourFriends .ourFriends__pets__Charly button,
+.wrapper .ourFriends .ourFriends__pets__Scarlet button {
+    width: 23.61vw;
+    margin-left: 7.42vw;
+  }
+}
+@media (max-width: 590px) {
+  .wrapper .ourFriends .ourFriends__pets__Katrine button,
+.wrapper .ourFriends .ourFriends__pets__Jennifer button,
+.wrapper .ourFriends .ourFriends__pets__Woody button,
+.wrapper .ourFriends .ourFriends__pets__Sophia button,
+.wrapper .ourFriends .ourFriends__pets__Timmy button,
+.wrapper .ourFriends .ourFriends__pets__Freddy button,
+.wrapper .ourFriends .ourFriends__pets__Charly button,
+.wrapper .ourFriends .ourFriends__pets__Scarlet button {
+    margin-left: 10.42vw;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper .ourFriends .ourFriends__pets__Katrine button,
+.wrapper .ourFriends .ourFriends__pets__Jennifer button,
+.wrapper .ourFriends .ourFriends__pets__Woody button,
+.wrapper .ourFriends .ourFriends__pets__Sophia button,
+.wrapper .ourFriends .ourFriends__pets__Timmy button,
+.wrapper .ourFriends .ourFriends__pets__Freddy button,
+.wrapper .ourFriends .ourFriends__pets__Charly button,
+.wrapper .ourFriends .ourFriends__pets__Scarlet button {
+    margin-left: 11.42vw;
+    width: 35.61vw;
+  }
+}
+@media (max-width: 440px) {
+  .wrapper .ourFriends .ourFriends__pets__Katrine button,
+.wrapper .ourFriends .ourFriends__pets__Jennifer button,
+.wrapper .ourFriends .ourFriends__pets__Woody button,
+.wrapper .ourFriends .ourFriends__pets__Sophia button,
+.wrapper .ourFriends .ourFriends__pets__Timmy button,
+.wrapper .ourFriends .ourFriends__pets__Freddy button,
+.wrapper .ourFriends .ourFriends__pets__Charly button,
+.wrapper .ourFriends .ourFriends__pets__Scarlet button {
+    margin-left: 21.42vw;
+    width: 35.61vw;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper .ourFriends .ourFriends__pets__Katrine button,
+.wrapper .ourFriends .ourFriends__pets__Jennifer button,
+.wrapper .ourFriends .ourFriends__pets__Woody button,
+.wrapper .ourFriends .ourFriends__pets__Sophia button,
+.wrapper .ourFriends .ourFriends__pets__Timmy button,
+.wrapper .ourFriends .ourFriends__pets__Freddy button,
+.wrapper .ourFriends .ourFriends__pets__Charly button,
+.wrapper .ourFriends .ourFriends__pets__Scarlet button {
+    margin-left: 22.42vw;
+    width: 35.61vw;
+  }
+}
+.wrapper .ourFriends .ourFriends__pets__Katrine button:hover,
+.wrapper .ourFriends .ourFriends__pets__Jennifer button:hover,
+.wrapper .ourFriends .ourFriends__pets__Woody button:hover,
+.wrapper .ourFriends .ourFriends__pets__Sophia button:hover,
+.wrapper .ourFriends .ourFriends__pets__Timmy button:hover,
+.wrapper .ourFriends .ourFriends__pets__Freddy button:hover,
+.wrapper .ourFriends .ourFriends__pets__Charly button:hover,
+.wrapper .ourFriends .ourFriends__pets__Scarlet button:hover {
+  border: 2px solid #292929;
+}
+.wrapper .wrapper__buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .wrapper__buttons .buttons {
+  margin-top: 45px;
+  position: absolute;
+  width: 26.56vw;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .wrapper .wrapper__buttons .buttons {
+    width: 66.56vw;
+  }
+}
+@media (max-width: 590px) {
+  .wrapper .wrapper__buttons .buttons {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.wrapper .wrapper__buttons .buttons button {
+  width: 4.06vw;
+  height: 52px;
+  border-radius: 100px;
+  border: 1px solid #F1CDB3;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 6%;
+}
+@media (max-width: 767px) {
+  .wrapper .wrapper__buttons .buttons button {
+    width: 8vw;
+  }
+}
+@media (max-width: 590px) {
+  .wrapper .wrapper__buttons .buttons button {
+    width: 12.06vw;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper .wrapper__buttons .buttons button {
+    width: 15.06vw;
+  }
+}
+.wrapper .wrapper__buttons .buttons button:hover {
+  border: 1px solid #ffffff;
+}
+.wrapper .wrapper__buttons .buttons .page {
+  width: 4.06vw;
+  height: 52px;
+  border-radius: 100px;
+  background-color: #F1CDB3;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 6%;
+}
+@media (max-width: 767px) {
+  .wrapper .wrapper__buttons .buttons .page {
+    width: 8vw;
+  }
+}
+@media (max-width: 590px) {
+  .wrapper .wrapper__buttons .buttons .page {
+    width: 12.06vw;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper .wrapper__buttons .buttons .page {
+    width: 15.06vw;
+  }
+}
+.wrapper .footer {
+  margin-top: 150px;
+  height: 350px;
+  background-image: url(../../Assets/Images/Main/footer-background.png);
+  padding: 40px 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 767px) {
+  .wrapper .footer {
+    height: 809px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper .footer .footerdog {
+    width: 260px;
+    height: 269px;
+  }
+}
+.wrapper .footer h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 6%;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .wrapper .footer h3 {
+    font-size: 25px;
+    line-height: 32.5px;
+  }
+}
+.wrapper .footer a {
+  text-decoration: none;
+  color: #F1CDB3;
+}
+.wrapper .footer .email,
+.wrapper .footer .phone,
+.wrapper .footer .map {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 767px) {
+  .wrapper {
+    /*Span*/
+  }
+  .wrapper .nav {
+    height: 100%;
+    position: absolute;
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 auto;
+    top: 100px;
+    left: 15.63vw;
+    padding-left: 7.81vw;
+    padding-top: 15px;
+    z-index: 1;
+    visibility: hidden;
+  }
+  .wrapper .nav.active {
+    visibility: visible;
+  }
+  .wrapper .burger__btn {
+    visibility: visible;
+  }
+  .wrapper .burger__btn span {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    margin: 5px -35px;
+    background-color: #000000;
+    transition: all 0.5s;
+  }
+  .wrapper .burger__btn.active {
+    padding-left: 10px;
+  }
+  .wrapper .burger__btn span:nth-of-type(2) {
+    top: 10px;
+  }
+  .wrapper .burger__btn span:nth-of-type(3) {
+    top: 20px;
+  }
+  .wrapper .burger__btn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .wrapper .burger__btn.active span:nth-of-type(3) {
+    transform: rotate(45deg) translate(-45%);
+  }
+  .wrapper .burger__btn.active span:first-of-type {
+    transform: rotate(-45deg) translate(-45%);
+  }
+}/*# sourceMappingURL=style.css.map */
