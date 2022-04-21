@@ -1,107 +1,147 @@
-$padding-for-all: 0 40px 0;
-$color-dark-3xl: #292929;
-$color-dark-xl: #4C4C4C;
-$color-dark-i: #545454;
-$color-light-l: #f6f6f6;
-$color-dark-s: #CDCDCD;
-$color-dark-m: #B2B2B2;
-$color-light-xl: #ffffff;
-$color-light-s: #FAFAFA;
-$color-primary: #F1CDB3;
+@import 'vars';
+@import 'breakpoints';
 
 
-@mixin Georgia-s() {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 22.72px;
-    letter-spacing: 6%;
-
+*a {
+    text-decoration: none;
 }
 
-@mixin Georgia-l() {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 6%;
-
-}
-
-@mixin Georgia-xl() {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 45.5px;
-    letter-spacing: 6%;
-
-
-}
+html, body {width:100%; height: 100%; overflow-x:hidden; z-index: 0;}
 
 
 
-@mixin Arial() {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-
-
-}
-
-@import vars;
-@import breakpoints;
-
-
-*a{text-decoration: none;}
 .wrapper {
+
+    
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 1280px;
 
+    
+
+    
+    
+
+
 
 
     .header {
-        height: 908px;
-        background-image: url(../../Assets/Images/Main/start-screen-gradient-background.png), url(../../Assets/Images/menu/start-screen-background.jpg);
-        padding: $padding-for-all;
 
+        height: 1165px;
+        background-image: url(../../Assets/Images/Main/start-screen-gradient-background.png), url(../../Assets/Images/menu/start-screen-background.jpg);
+        background-size: cover;
+
+        padding: $padding-for-all;
+            @include xl{
+                height: 1165px;
+                background-size: cover;
+            }
+            @include lg{
+                height: 823px;
+                background-size: cover;
+            }
+            
 
         .menu {
+           @include xl{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-top: 25px;
+
+            }
+            @include xlg{
+                display: flex;justify-content: space-between;
+    
+            }
+
+            
+            
+           
+
+
             padding-top: 60px;
             display: flex;
             justify-content: space-between;
 
+            
+
+                
+
             .logo {
 
                 width: 14.38vw;
+                @include xl{
+                    width: 33vw;
+                    margin-right: 50px;
+                }
+
+                @include lg{
+                    width: 60vw;
+                    margin-right: 50px;
+                }
+                
 
                 .title {
+                    
+                    @include xl{
+                        font-size: 32px;
+                        line-height: 35.2px;
+                        margin-right: 50px;
+                    }
+
                     @include Georgia-xl();
                     color: $color-primary;
+
+                    
                 }
 
                 .subtitle {
                     @include Arial();
                     color: $color-light-xl;
-                    text-align: center;
+                    text-align: left;
+
+                    
 
                 }
             }
-
+            
             .nav {
+
+                @include xl{
+                    display: block;
+                    margin-left: 5px;
+                    width: 39.05vw;
+                }
+                 @include xlg{
+                    
+                     width: 59.05vw;
+                    
+                   
+                 }
+               
+                
+                
                 width: 33.05vw;
                 padding-top: 1.33vw;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                flex-wrap: wrap;
+                
 
-                .active{
-                    color:$color-primary
+                
+
+                .active {
+                    color: $color-primary
                 }
 
                 a {
+                   
+                    @include lg{
+                        font-size: 32px;
+                        flex-direction: column;
+                        line-height: 51.2px;
+                    }
+
                     display: inline-block;
                     padding: 0.78vw;
                     text-decoration: none;
@@ -117,41 +157,105 @@ $color-primary: #F1CDB3;
 
                 }
 
+                .burger__btn {
+
+
+                    
+                    width: 30px;
+                    height: 20px;
+                    position: relative;
+                    visibility: hidden;
+                    
+                }
+
+
             }
+            
+
+            
+
+
+            
+            
         }
 
         .makefriend {
+            @include xl{
+                
+                display: flex; flex-direction: column;
+                align-items: center;
+                margin-top: -50px;
+                
+            }
+
+            
             padding: 4.69vw 0 0 0;
             width: 100%;
             height: 728px;
-            background-image: url(../../Assets/Images/Main/start-screen-puppy.png);
-            background-repeat: no-repeat;
-            background-position: center right;
+            display: flex; justify-content: space-between;
 
-
-
-            .makefriend_info {
+            
+           .makefriend_info {
+                
+                @include xl{
+                    width: 45.09vw;
+                    margin-top: 15px;
+                    
+                }
+                @include lg{
+                    width: 65.10vw;
+                  
+                    
+                }
+                
+                
                 width: 36.09vw;
                 height: 322px;
                 margin-top: 163px;
 
 
+                
+
+
                 h1 {
+
                     font-family: Georgia, 'Times New Roman', Times, serif;
                     font-weight: 400;
                     font-size: 44px;
                     line-height: 57.2px;
                     color: $color-light-xl;
 
+                    @include lg{
+                        font-size: 25px;
+                        line-height: 32.5px;
+                    }
+
                 }
 
                 p {
+                    @include lg{
+                        
+                    }
+
+                    
                     @include Arial();
                     color: $color-dark-s;
                     padding-bottom: 3.28vw;
                 }
 
                 .makefriend_button {
+
+                        @include xl{
+                            width: 207px;
+                            height: 52px;
+                            margin-left: 25%;
+                            
+                        }
+                        @include md{
+                            
+                            margin-left: 5%;
+                            
+                        }
                     width: 16.25vw;
                     height: 3.25rem;
                     background-color: $color-primary;
@@ -162,19 +266,48 @@ $color-primary: #F1CDB3;
                     font-weight: 400;
                     font-size: 17px;
                     line-height: 130%;
+
                     
-                        a{
-                            color: #292929;
-                        }
+                    
+
+                    
+
+                    a {
+                        color: #292929;
+                    }
 
                 }
 
-                .makefriend_button:hover{
+                .makefriend_button:hover {
                     background-color: $color-dark-i;
                 }
 
+                
+                
 
             }
+            img{
+
+                @include xl{
+                width: 569px; 
+                height: 563px;
+                margin-top: 180px;
+                vertical-align: top;
+                }
+
+                @include lg{
+                    width: 260px; 
+                    height: 271px;
+                    margin-top: 10px;
+                    
+                    }
+                
+
+
+            }
+
+
+            
 
         }
 
@@ -183,25 +316,58 @@ $color-primary: #F1CDB3;
 
 
     .aboutUs {
+        
+        @include xl{
+            display: flex; flex-direction: column-reverse; 
+            margin: 130px 12.97vw 100px;
+            height: 868px;
+            margin-left: 30%;
+            
+        }
+        @include lg{
+            width: 90.10vw;
+            margin-left: 10%;
+          
+            
+        }
+        
         display: flex;
         justify-content: space-between;
         margin-top: 6.25vw;
         height: 588px;
 
         & img {
+            
+            
             margin-left: 11.72vw;
             margin-right: 9.77vw;
+
+            
         }
 
         .aboutUs_info {
             margin-right: 13.28vw;
 
             & h3 {
+
+                @include lg{
+                    font-size: 25px;
+                    line-height: 32.5px
+                  
+                    
+                }
+
+
                 @include Georgia-xl();
                 color: $color-dark-i;
             }
 
             & p {
+
+                @include xl{
+                    margin-top: 25px;
+
+                }
                 @include Arial();
                 color: $color-dark-xl;
             }
@@ -214,6 +380,11 @@ $color-primary: #F1CDB3;
 
 
         & h3 {
+
+            @include md{
+                font-size: 25px;
+                line-height: 32.5px;
+            }
             @include Georgia-xl();
             color: $color-dark-i;
             text-align: center;
@@ -225,7 +396,8 @@ $color-primary: #F1CDB3;
             display: flex;
             justify-content: space-evenly;
 
-            .right, .left {
+            .right,
+            .left {
                 width: 52px;
                 height: 52px;
                 border-radius: 100%;
@@ -233,19 +405,22 @@ $color-primary: #F1CDB3;
                 align-self: center;
 
 
-                &:hover{
+                &:hover {
                     border: 2px solid $color-dark-3xl;
                 }
 
-                
+
             }
-            .ourPets__pets__Katrine img, .ourPets__pets__Jenifer img, .ourPets__pets__Woody img {
+
+            .ourPets__pets__Katrine img,
+            .ourPets__pets__Jenifer img,
+            .ourPets__pets__Woody img {
                 width: 270px;
                 height: 270px;
 
             }
 
-           
+
 
             .ourPets__pets__Katrine {
                 background-color: $color-light-s;
@@ -256,11 +431,15 @@ $color-primary: #F1CDB3;
                     transform: scale(1.2);
                 }
 
-                &:hover button{
+                &:hover button {
                     background-color: $color-dark-i;
                 }
 
                 h2 {
+
+                    @include xl{
+                        margin-bottom: 50px;
+                    }
                     text-align: center;
                     color: $color-dark-i;
                     @include Georgia-s();
@@ -268,6 +447,29 @@ $color-primary: #F1CDB3;
                 }
 
                 button {
+
+                    @include xl{
+                        display:block;
+                        position: relative;
+                        margin:  0 auto;
+                    }
+
+                    @include lg{
+                        display: flex; align-items: center;
+                        width: 20.61vw;
+                        padding-left: 4vw;
+                        
+                    }
+                    @include md{
+                        display: flex; align-items: center;
+                        width: 40.61vw;
+                        padding-left: 7vw;
+                        font-size: 17px;
+                        line-height: 22.1px;
+                        
+                    }
+
+
                     margin-left: 35%;
                     width: 14.61vw;
                     height: 52px;
@@ -282,13 +484,26 @@ $color-primary: #F1CDB3;
                     margin-left: 13%;
                     margin-top: 30px;
 
-                    &:hover{
+                    &:hover {
                         border: 2px solid $color-dark-3xl;
                     }
                 }
             }
 
             .ourPets__pets__Jenifer {
+               
+                
+                
+
+                @include md{
+        
+                    display: none;
+                }
+                 @include lmd{
+        
+                    display: none;
+                }
+
                 background-color: $color-light-s;
                 height: 435px;
                 padding-bottom: 30px;
@@ -297,11 +512,15 @@ $color-primary: #F1CDB3;
                     transform: scale(1.2);
                 }
 
-                &:hover button{
+                &:hover button {
                     background-color: $color-dark-i;
                 }
 
                 h2 {
+
+                    @include xl{
+                        margin-bottom: 50px;
+                    }
                     text-align: center;
                     color: $color-dark-i;
                     @include Georgia-s();
@@ -309,6 +528,20 @@ $color-primary: #F1CDB3;
                 }
 
                 button {
+
+                    @include xl{
+                        display:block;
+                        position: relative;
+                        margin:  0 auto;
+                    }
+                    @include lg{
+                        display: flex; align-items: center;
+                        width: 20.61vw;
+                        padding-left: 4vw;
+                        
+                    }
+
+
                     margin-left: 35%;
                     width: 14.61vw;
                     height: 52px;
@@ -323,7 +556,7 @@ $color-primary: #F1CDB3;
                     margin-left: 13%;
                     margin-top: 30px;
 
-                    &:hover{
+                    &:hover {
                         border: 2px solid $color-dark-3xl;
                     }
                 }
@@ -331,6 +564,10 @@ $color-primary: #F1CDB3;
             }
 
             .ourPets__pets__Woody {
+
+                @include xl{
+                    display: none;
+                }
                 background-color: $color-light-s;
                 height: 435px;
                 padding-bottom: 30px;
@@ -340,11 +577,11 @@ $color-primary: #F1CDB3;
                     transform: scale(1.2);
                 }
 
-                &:hover button{
+                &:hover button {
                     background-color: $color-dark-i;
                 }
 
-                
+
 
 
 
@@ -356,6 +593,8 @@ $color-primary: #F1CDB3;
                 }
 
                 button {
+
+                   
                     margin-left: 35%;
                     width: 14.61vw;
                     height: 52px;
@@ -370,13 +609,13 @@ $color-primary: #F1CDB3;
                     margin-top: 30px;
                     color: $color-dark-3xl;
 
-                    &:hover{
+                    &:hover {
                         border: 2px solid $color-dark-3xl;
                     }
 
-                    
 
-                    
+
+
 
                 }
 
@@ -386,8 +625,20 @@ $color-primary: #F1CDB3;
 
         }
 
-        .ourPets__button{
-            display: flex; align-items: center; justify-content: center;
+        .ourPets__button {
+
+            @include xl{
+                width: 25.39vw;
+            height: 52px;
+            }
+
+            @include lg{
+                width: 55.39vw;
+                margin-left: 23%;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 20.39vw;
             height: 52px;
             background-color: $color-primary;
@@ -400,15 +651,15 @@ $color-primary: #F1CDB3;
             letter-spacing: 6%;
 
 
-            a{
+            a {
                 color: $color-dark-3xl;
             }
 
 
-            
+
         }
 
-        .ourPets__button:hover{
+        .ourPets__button:hover {
             background-color: $color-light-xl;
         }
 
@@ -416,83 +667,124 @@ $color-primary: #F1CDB3;
 
     }
 
-    .help{
+    .help {
         height: 611px;
         margin-bottom: -20px;
+        @include md{
+            height: 745px;
+            margin-bottom: 100px; 
+            
+        }
 
-        h3{
+        h3 {
             @include Georgia-xl();
             color: $color-dark-i;
             margin-top: 80px;
             text-align: center;
-            
+
         }
 
-        .help__info{
-            width: 80.16vw;
-            height: 281px;
-            display: flex; flex-direction: column;
-            margin: 60px 6.80vw auto;
+        .help__info {
 
+            @include mlg{
+                grid-column-gap:7.16vw; 
+            }
+            @include lg{
+                grid-column-gap:15.16vw; 
+            }
+            @include md{
+                grid-column-gap:25.16vw; 
+            }
+            
+            
+            max-width: 80.16vw;
+            height: 281px;
+            display: flex;
+            flex-wrap: wrap;  
+            
+            
+            margin: 60px 6.80vw auto;
+            
+            grid-column-gap:10.16vw;
+            grid-row-gap:2.34vw;
 
             
+            & div{
+                display: flex; flex-direction: column; align-items: stretch;
+                position: relative;
+                margin: 0 auto;
+                height: 113px;
+                
+                
 
-
-            .help__info__first-line{
-                display: flex; justify-content: space-between;
-
-                 & div{
-                     flex-direction: column;
-                     height: 113px;
-                     text-align: center;
-                 }
-            }
-
-
-            .help__info__second-line{
-                display: flex; justify-content: space-around;
-                margin-top: 55px;
-
-                & div{
-                    flex-direction: column;
-                    height: 113px;
-                    text-align: center;
+               
+                img{
+                    width: 60px;
+                    height: 60px;
+                    position: relative;margin: 0 auto;
                 }
             }
-            
-            
+
 
             
+
+
+
+
         }
     }
 
-    .donation{
+    .donation {
+
+        @include xl{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        @include md{
+           height: 542px;
+        }
+
         background-color: $color-light-l;
         height: 462px;
-        display: flex; justify-content: center;
+        display: flex;
+        justify-content: center;
         padding: 91px 12.73vw 100px;
-        
 
-        .donation__img{
+
+        .donation__img {
+            @include md{
+                width: 260px;
+                height: 135px; 
+              }
             width: 39.45vw;
             height: 261px;
             margin-right: 30px;
             margin-top: 50px;
         }
 
-        .donation__info{
+        .donation__info {
+            @include md{
+               width: 100%; 
+             }
             width: 39.45vw;
             height: 261;
             margin: 20px;
 
 
-            h3{
+            h3 {
+                @include md{
+                    font-size: 25px;
+                    line-height: 32.5px;
+                    width: 64vw;
+                }
                 @include Georgia-xl();
                 color: $color-dark-i;
             }
 
 
-            .donation__info__banks{
+            .donation__info__banks {
+               
+                
                 color: $color-dark-i;
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 font-weight: 400;
@@ -503,22 +795,47 @@ $color-primary: #F1CDB3;
             }
 
 
-            .donation__info__button{
+            .donation__info__button {
+
+                @include xl{
+                    width: 32.27vw;
+                    
+                }
+                @include mlg{
+                    width: 39.27vw;
+                    
+                }
+                @include md{
+                    width: 100%;
+                    
+                }
+                
                 width: 27.27vw;
                 height: 43px;
                 border-radius: 9px;
                 background-color: $color-primary;
-                display: flex; justify-content: space-evenly; align-items: center;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
                 @include Georgia-s();
 
 
-                a{
+                a {
+                    @include xl{
+                        font-size: 20px;
+                        
+                    }
+                    @include md{
+                        font-size: 15px;
+                        
+                    }
+
                     color: $color-dark-i;
                 }
             }
 
 
-            .donation__info__contant{
+            .donation__info__contant {
                 font-family: Arial, Helvetica, sans-serif;
                 font-weight: 400;
                 font-style: italic;
@@ -533,29 +850,149 @@ $color-primary: #F1CDB3;
     }
 
 
-    .footer{
+    .footer {
+        @include mlg{
+            flex-wrap: wrap;
+            align-items: center;
+            height: 637px;
+            
+            padding-top: 50px;
+        }
+
+        @include md{
+            height: 100%;
+            background-size: cover;
+        }
+        
+        
         height: 350px;
         background-image: url(../../Assets/Images/Main/footer-background.png);
         padding: 40px 40px 0;
-        display: flex; justify-content: space-evenly;
+        display: flex;
+        justify-content: space-evenly;
 
-        h3{
+        h3 {
+
+            @include mlg{
+                font-size: 25px;
+                line-height: 32.5px;
+            }
             @include Georgia-xl();
             color: $color-light-xl;
-        
+
         }
 
 
-        a{
+        a {
             text-decoration: none;
             color: $color-primary;
 
         }
 
 
-        .email, .phone, .map{
-            display: flex; align-items: center; justify-content: space-evenly;
+        .email,
+        .phone,
+        .map {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .footerdog{
+            @include md{
+                width: 260px;
+                height: 269px;
+            }
         }
     }
+    //burger
+
+    @include lg{
+        
+    
+        .nav{
+
+            @include md{
+                padding-left: 60px;
+            padding-top: 150px;
+            }
+            
+            height: 100%;
+            
+            position: absolute;
+            background-color: #292929;
+            display: flex; flex-direction: column;align-items: center; 
+            margin: 0 auto;
+            margin-top: 70px;
+            padding-left: 120px;
+            padding-top: 150px;
+            
+            z-index: 1;
+            
+           
+            
+           
+            
+            
+            // float: inline-start;
+            visibility: hidden;
+
+            
+        }
+    
+        
+            
+           
+            
+            
+    
+        
+    
+        .nav.active{
+            visibility: visible;
+            
+        }
+    
+        .burger__btn {
+            
+            visibility: visible;
+            
+        }
+        /*Span*/
+        .burger__btn span{
+            width: 30px;
+            height: 3px;
+            position: absolute;
+            margin: 50px -35px ;
+            background-color:$color-primary;
+            transition: all 0.5s;
+            
+            
+        }
+        .burger__btn.active{
+            padding-left: 10px;
+        }
+        
+        .burger__btn span:nth-of-type(2){
+            top:10px
+        }
+        .burger__btn span:nth-of-type(3){
+            top:20px
+        }
+        .burger__btn.active span:nth-of-type(2){
+            opacity: 0;
+        }
+        .burger__btn.active span:nth-of-type(3){
+            transform: rotate(45deg) translate(30%);
+            
+            
+        }
+        .burger__btn.active span:first-of-type{
+            transform: rotate(-45deg) translate(30%);
+            
+        }
+    }
+
+
 
 }

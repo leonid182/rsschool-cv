@@ -1,0 +1,62 @@
+$padding-for-all: 0 40px 0;
+$color-dark-3xl: #292929;
+$color-dark-xl: #4C4C4C;
+$color-dark-i: #545454;
+$color-light-l: #f6f6f6;
+$color-dark-s: #CDCDCD;
+$color-dark-m: #B2B2B2;
+$color-light-xl: #ffffff;
+$color-light-s: #FAFAFA;
+$color-primary: #F1CDB3;
+$breakpoints:(
+   sm: 320px,
+   md: 500px,
+   lmd: 590px,
+   lg: 768px,
+   mlg: 970px,
+   xlg: 1060px,
+   xl: 1280px
+
+);
+
+
+
+
+@mixin Georgia-s() {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22.72px;
+    letter-spacing: 6%;
+
+}
+
+@mixin Georgia-l() {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 6%;
+
+}
+
+@mixin Georgia-xl() {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 6%;
+
+
+}
+
+
+
+@mixin Arial() {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+
+}
